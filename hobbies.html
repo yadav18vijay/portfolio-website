@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piyaau Project Cards</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5dc; /* Beige background */
+            margin: 0;
+            padding: 0;
+        }
+
+        .card-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .card {
+            background-color: #ffffff; /* White background for cards */
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            width: 300px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card-image {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        .card-heading {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        .card h3 {
+            margin-top: 0;
+        }
+
+        .card ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .card ul li {
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            margin: 0;
+        }
+
+        @media (max-width: 768px) {
+            .card-container {
+                width: 100%;
+            }
+
+            .card {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="card-container">
+        <!-- Card 1: Project Overview -->
+        <div class="card">
+            <img src="/piyaau.jpg" alt="Piyaau Website" class="card-image">
+            <h2 class="card-heading">Piyaau Website Development</h2>
+        </div>
+        <!-- Card 2: Project Phases -->
+        <div class="card">
+            <h3>Project Phases</h3>
+            <ul>
+                <li><strong>Design Phase:</strong> Created detailed wireframes and high-fidelity mockups to visualize the website’s layout and user interface, incorporating modern design trends and user feedback.</li>
+                <li><strong>Development Phase:</strong> Translated design concepts into code using HTML, CSS, and JavaScript, ensuring all interactive elements functioned correctly and the design was responsive across various devices.</li>
+                <li><strong>Testing Phase:</strong> Conducted rigorous testing for cross-browser compatibility and mobile responsiveness to ensure a consistent user experience across all platforms.</li>
+                <li><strong>Launch Phase:</strong> Finalized and deployed the website, collaborated with the Piyaau team to ensure all requirements were met, and made necessary adjustments based on feedback.</li>
+            </ul>
+        </div>
+        <!-- Card 3: Technologies Used -->
+        <div class="card">
+            <h3>Technologies Used</h3>
+            <ul>
+                <li><strong>HTML5 & CSS3:</strong> For structuring and styling the website, ensuring a clean and modern appearance.</li>
+                <li><strong>JavaScript:</strong> Implemented interactive features and enhanced user engagement.</li>
+                <li><strong>Bootstrap:</strong> Utilized for responsive design and to streamline the development process.</li>
+                <li><strong>Cross-Browser Testing Tools:</strong> Ensured the website’s compatibility across different browsers for a consistent user experience.</li>
+            </ul>
+        </div>
+        <!-- Card 4: Collaboration -->
+        <div class="card">
+            <h3>Collaboration</h3>
+            <p><strong>Collaboration:</strong> Worked closely with Piyaau’s startup team to understand their vision, goals, and requirements. Incorporated their feedback throughout the development process to align the website with their brand and objectives.</p>
+        </div>
+    </div>
+</body>
+</html>

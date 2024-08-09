@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Cards</title>
+    <link rel="stylesheet" href="aws style.css">
+    <style>
+        body {
+            background-color: beige;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding-top: 350px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            width: 350px;
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .card-img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        h3 {
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Card 1: Name and Photo -->
+        <div class="card">
+            <h3>Interactive Power BI Sales Dashboard</h3>
+            <img src="/sales power bi.jpg" alt="Project Photo" class="card-img">
+        </div>
+
+        <!-- Card 2: Project Description -->
+        <div class="card">
+            <h3>Description</h3>
+            <p>Created a dynamic Power BI dashboard to analyze and visualize sales performance. The dashboard integrates data from multiple sources to provide actionable insights, helping drive sales strategy and decision-making.</p>
+        </div>
+
+        <!-- Card 3: Project Details -->
+        <div class="card">
+            <h3>Key Features</h3>
+            <p><strong>Sales Metrics:</strong> Displays total sales, revenue growth, and sales targets.</p>
+            <p><strong>Geographical and Trend Analysis:</strong> Visualizes regional sales performance and time-based trends.</p>
+            <p><strong>Product Insights:</strong> Highlights top-performing products and categories.</p>
+            <p><strong>Interactive Filters:</strong> Allows users to filter data by date, region, product, and sales rep.</p>
+        </div>
+
+        <!-- Card 4: Technologies Used -->
+        <div class="card">
+            <h3>Technologies Used</h3>
+            <p>Power BI, CRM systems, Databases, Excel, DAX, Power Query</p>
+        </div>
+</body>
+</html>

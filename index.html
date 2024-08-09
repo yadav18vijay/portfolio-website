@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vijay Yadav - Portfolio</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand" href="#">Vijay Yadav</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#portfolio">Portfolio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#skills">Skills</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Home Section -->
+  <section id="home" class="home-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 home-text">
+          <h1>Vijay Yadav</h1>
+          <h2> Freelance Designer & Developer</h2>
+          <p>"Crafting digital experiences that set new standards. Merging design, code, and interaction to elevate brands beyond the ordinary."</p>
+          <a href="resume.pdf" class="btn btn-primary" download>Download Resume</a>
+          <a href="cv.pdf" class="btn btn-secondary" download>Download CV</a>
+        </div>
+        <div class="col-md-6 home-image">
+          <!---<img src="" alt="Vijay Yadav">-->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Add the rest of the sections here (About, Portfolio, Skills, Contact) -->
+  <section id="me" class="me-section">
+    <div class="container">
+            <div class="col-md-10  me-text">
+                <h2 class="section-title">About Me</h2>
+                <h3>Freelance Designer & Developer</h3>
+                <p>Vijay Yadav is a versatile Electronics Engineer skilled in C++, Python, and full-stack web development. With expertise in RFID security systems and real-time computer vision, he blends technical innovation with a passion for sleek UI/UX design. Focused, adaptive, and ready to excel in the IT field.</p>
+                <a href="#portfolio" class="btn btn-primary">View Portfolio</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+ <!-- Portfolio Section -->
+ <section id="portfolio" class="portfolio-section">
+    <div class="container">
+        <h2>My Portfolio</h2>
+        <div id="portfolioCarousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <!-- First Slide -->
+                <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="portfolio-card">
+                                <img src="/aws.svg" alt="PROJECTS">
+                                <div class="portfolio-card-body">
+                                    <h3>AWS PROJECT</h3>
+                                </div>
+                                <a href="/aws.html" class="portfolio-link">View Details</a>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="portfolio-card">
+                                <img src="/OIP.jpeg" alt="EXPERIENCE">
+                                <div class="portfolio-card-body">
+                                    <h3>WEB DEVELOPMENT PROJECTS</h3>
+                                </div>
+                                <a href="/web.html" class="portfolio-link">View Details</a>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="portfolio-card">
+                                <img src="power bi.jpg" alt="POWER BI">
+                                <div class="portfolio-card-body">
+                                    <h3>POWER BI PROJECT</h3>
+                                </div>
+                                <a href="/power bi.html" class="portfolio-link">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Second Slide -->
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="portfolio-card">
+                                <img src="/tech.jpg" alt="CERTIFICATION">
+                                <div class="portfolio-card-body">
+                                    <h3>TECH PROJECTS</h3>
+                                </div>
+                                <a href="/projects.html" class="portfolio-link">View Details</a>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="portfolio-card">
+                                <img src="/CERTIFIED.jpg" alt="CERTIFICATION">
+                                <div class="portfolio-card-body">
+                                    <h3>CERTIFICATION</h3>
+                                </div>
+                                <a href="/cert.html" class="portfolio-link">View Details</a>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="portfolio-card">
+                                <img src="/EXPERIENCE.jpg"alt="EXPERIENCE">
+                                <div class="portfolio-card-body">
+                                    <h3>EXPERIENCE</h3>
+                                </div>
+                                <a href="/hobbies.html" class="portfolio-link">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Carousel controls -->
+            <a class="carousel-control-prev" href="#portfolioCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#portfolioCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+</section>
+<!-- Skills Section -->
+<section id="skills" class="skills-section">
+    <div class="container">
+        <h2 class="section-title">Skills Overview</h2>
+
+        <div class="skills-wrapper">
+            <!-- Technical Skills -->
+            <div class="technical-skills">
+                <!-- Programming Skills -->
+                <div class="skills-category">
+                    <h3>Programming</h3>
+                    <div class="skill-bar-container">
+                        <div class="skill-circle" data-skill="80" style="--skill-color: #008080;">
+                            <svg viewBox="0 0 100 100">
+                                <circle class="background-circle" cx="50" cy="50" r="45"/>
+                                <circle class="progress-circle" cx="50" cy="50" r="45"/>
+                                <text x="50%" y="50%" text-anchor="middle" dy=".3em"></text>
+                            </svg>
+                            <span class="skill-title">C</span>
+                        </div>
+                        <div class="skill-circle" data-skill="70" style="--skill-color: #005b96;">
+                            <svg viewBox="0 0 100 100">
+                                <circle class="background-circle" cx="50" cy="50" r="45"/>
+                                <circle class="progress-circle" cx="50" cy="50" r="45"/>
+                                <text x="50%" y="50%" text-anchor="middle" dy=".3em"></text>
+                            </svg>
+                            <span class="skill-title">C++</span>
+                        </div>
+                        <div class="skill-circle" data-skill="90" style="--skill-color: #306998;">
+                            <svg viewBox="0 0 100 100">
+                                <circle class="background-circle" cx="50" cy="50" r="45"/>
+                                <circle class="progress-circle" cx="50" cy="50" r="45"/>
+                                <text x="50%" y="50%" text-anchor="middle" dy=".3em"></text>
+                            </svg>
+                            <span class="skill-title">Python</span>
+                        </div>
+                        <div class="skill-circle" data-skill="75" style="--skill-color: #0284c7;">
+                            <svg viewBox="0 0 100 100">
+                                <circle class="background-circle" cx="50" cy="50" r="45"/>
+                                <circle class="progress-circle" cx="50" cy="50" r="45"/>
+                                <text x="50%" y="50%" text-anchor="middle" dy=".3em"></text>
+                            </svg>
+                            <span class="skill-title">ASP.NET</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Web Technologies -->
+                <div class="skills-category">
+                    <h3>Web Technologies</h3>
+                    <div class="skill-bar-container">
+                        <div class="skill-circle" data-skill="85" style="--skill-color: #e34c26;">
+                            <svg viewBox="0 0 100 100">
+                                <circle class="background-circle" cx="50" cy="50" r="45"/>
+                                <circle class="progress-circle" cx="50" cy="50" r="45"/>
+                                <text x="50%" y="50%" text-anchor="middle" dy=".3em"></text>
+                            </svg>
+                            <span class="skill-title">HTML</span>
+                        </div>
+                        <div class="skill-circle" data-skill="80" style="--skill-color: #1572b6;">
+                            <svg viewBox="0 0 100 100">
+                                <circle class="background-circle" cx="50" cy="50" r="45"/>
+                                <circle class="progress-circle" cx="50" cy="50" r="45"/>
+                                <text x="50%" y="50%" text-anchor="middle" dy=".3em"></text>
+                            </svg>
+                            <span class="skill-title">CSS</span>
+                        </div>
+                        <div class="skill-circle" data-skill="75" style="--skill-color: #f7df1e;">
+                            <svg viewBox="0 0 100 100">
+                                <circle class="background-circle" cx="50" cy="50" r="45"/>
+                                <circle class="progress-circle" cx="50" cy="50" r="45"/>
+                                <text x="50%" y="50%" text-anchor="middle" dy=".3em"></text>
+                            </svg>
+                            <span class="skill-title">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tools -->
+                <div class="skills-category">
+                    <h3>Tools</h3>
+                    <div class="skill-bar-container">
+                        <div class="skill-circle" data-skill="80" style="--skill-color: #f5c518;">
+                            <svg viewBox="0 0 100 100">
+                                <circle class="background-circle" cx="50" cy="50" r="45"/>
+                                <circle class="progress-circle" cx="50" cy="50" r="45"/>
+                                <text x="50%" y="50%" text-anchor="middle" dy=".3em"></text>
+                            </svg>
+                            <span class="skill-title">Power BI</span>
+                        </div>
+                        <div class="skill-circle" data-skill="65" style="--skill-color: #ff9900;">
+                            <svg viewBox="0 0 100 100">
+                                <circle class="background-circle" cx="50" cy="50" r="45"/>
+                                <circle class="progress-circle" cx="50" cy="50" r="45"/>
+                                <text x="50%" y="50%" text-anchor="middle" dy=".3em"></text>
+                            </svg>
+                            <span class="skill-title">AWS</span>
+                        </div>
+                        <div class="skill-circle" data-skill="90" style="--skill-color: #1a73e8;">
+                            <svg viewBox="0 0 100 100">
+                                <circle class="background-circle" cx="50" cy="50" r="45"/>
+                                <circle class="progress-circle" cx="50" cy="50" r="45"/>
+                                <text x="50%" y="50%" text-anchor="middle" dy=".3em"></text>
+                            </svg>
+                            <span class="skill-title">Full Stack Web Development</span>
+                        </div>
+                        <div class="skill-circle" data-skill="70" style="--skill-color: #db14b5;">
+                            <svg viewBox="0 0 100 100">
+                                <circle class="background-circle" cx="50" cy="50" r="45"/>
+                                <circle class="progress-circle" cx="50" cy="50" r="45"/>
+                                <text x="50%" y="50%" text-anchor="middle" dy=".3em"></text>
+                            </svg>
+                            <span class="skill-title">Microsoft SQL Server</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Soft Skills -->
+            <div class="soft-skills">
+                <div class="skills-category">
+                    <h3>Soft Skills</h3>
+                    <div class="skill-bar-container">
+                        <div class="skill-circle" data-skill="85" style="--skill-color: #00bfae;">
+                            <svg viewBox="0 0 100 100">
+                                <circle class="background-circle" cx="50" cy="50" r="45"/>
+                                <circle class="progress-circle" cx="50" cy="50" r="45"/>
+                                <text x="50%" y="50%" text-anchor="middle" dy=".3em"></text>
+                            </svg>
+                            <span class="skill-title">Communication</span>
+                        </div>
+                        <div class="skill-circle" data-skill="80" style="--skill-color: #009688;">
+                            <svg viewBox="0 0 100 100">
+                                <circle class="background-circle" cx="50" cy="50" r="45"/>
+                                <circle class="progress-circle" cx="50" cy="50" r="45"/>
+                                <text x="50%" y="50%" text-anchor="middle" dy=".3em"></text>
+                            </svg>
+                            <span class="skill-title">Leadership</span>
+                        </div>
+                        <div class="skill-circle" data-skill="90" style="--skill-color: #4caf50;">
+                            <svg viewBox="0 0 100 100">
+                                <circle class="background-circle" cx="50" cy="50" r="45"/>
+                                <circle class="progress-circle" cx="50" cy="50" r="45"/>
+                                <text x="50%" y="50%" text-anchor="middle" dy=".3em"></text>
+                            </svg>
+                            <span class="skill-title">Teamwork</span>
+                        </div>
+                        <div class="skill-circle" data-skill="80" style="--skill-color: #ff5722;">
+                            <svg viewBox="0 0 100 100">
+                                <circle class="background-circle" cx="50" cy="50" r="45"/>
+                                <circle class="progress-circle" cx="50" cy="50" r="45"/>
+                                <text x="50%" y="50%" text-anchor="middle" dy=".3em"></text>
+                            </svg>
+                            <span class="skill-title">Time Management</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+  <!-- Contact Section -->
+<section id="contact" class="contact-section">
+    <div class="container">
+      <div class="contact-content">
+        <div class="contact-info">
+          <h2>Contact Me</h2>
+          <p>Feel free to reach out to me for any questions or opportunities. I'm always open to new collaborations!</p>
+          <ul>
+            <li><strong>Email:</strong> yadav18vijay@gmail.com</li>
+            <li><strong>Phone:</strong> +1918976523800</li>
+          </ul>
+        </div>
+        <div class="contact-form">
+          <h2>Send a Message</h2>
+          <form action="#" method="post">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+
+    document.addEventListener('DOMContentLoaded', function() {
+  const detailsToggle = document.querySelector('.details-toggle');
+  const contactDetails = document.querySelector('.contact-details');
+
+  detailsToggle.addEventListener('click', function() {
+    if (contactDetails.style.maxHeight) {
+      contactDetails.style.maxHeight = null;
+      contactDetails.style.opacity = 0;
+      detailsToggle.textContent = 'More Info';
+    } else {
+      contactDetails.style.maxHeight = contactDetails.scrollHeight + "px";
+      contactDetails.style.opacity = 1;
+      detailsToggle.textContent = 'Less Info';
+    }
+  });
+});
+
+  </script>
+</body>
+</html>

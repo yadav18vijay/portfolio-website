@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Cards</title>
+    <style>
+        body {
+            background-color: beige;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            flex-direction: column;
+            padding-top: 220px; /* Add padding to create space from the top */
+        }
+
+        .card-container {
+            perspective: 1000px;
+            margin: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .card {
+            width: 350px;
+            height: 500px;
+            position: relative;
+            transform-style: preserve-3d;
+            transition: transform 0.6s;
+            cursor: pointer;
+            margin: 10px;
+        }
+
+        .card:hover {
+            transform: rotateY(180deg);
+        }
+
+        .card .front, .card .back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .card .front {
+            background-color: #fff;
+        }
+
+        .card .front img {
+            width: 90%;
+            height: 90%;
+            border-radius: 10px;
+        }
+
+        .card .back {
+            background-color: #fff;
+            transform: rotateY(180deg);
+            font-size: 14px;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: left;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .card .back h2 {
+            margin-top: 0;
+        }
+
+        .card .back ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .card .back ul li {
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Card 1: Fashion and Style Website -->
+    <div class="card-container">
+        <div class="card">
+            <div class="front">
+                <img src="/fashon .jpg" alt="Fashion and Style Website">
+            </div>
+            <div class="back">
+                <h2>Fashion & Style Website</h2>
+                <p><strong>Project Overview:</strong> Developed a visually appealing and user-friendly fashion and style website with modern design elements.</p>
+                <p><strong>Key Features:</strong></p>
+                <ul>
+                    <li>Interactive lookbooks</li>
+                    <li>Responsive design</li>
+                    <li>Trend alerts and style guides</li>
+                    <li>User profile customization</li>
+                </ul>
+                <p><strong>Technologies Used:</strong></p>
+                <ul>
+                    <li>HTML, CSS, JavaScript</li>
+                    <li>Bootstrap for responsiveness</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Card 2: E-Commerce Website -->
+    <div class="card-container">
+        <div class="card">
+            <div class="front">
+                <img src="/e-commerce.jpg" alt="E-Commerce Website">
+            </div>
+            <div class="back">
+                <h2>Beauty Products E-Commerce</h2>
+                <p><strong>Project Overview:</strong> Created an elegant and user-centric e-commerce platform for beauty products, focusing on enhancing user experience and product accessibility.</p>
+                <p><strong>Key Features:</strong></p>
+                <ul>
+                    <li>Product categorization and filtering</li>
+                    <li>Secure payment gateway integration</li>
+                    <li>User reviews and ratings</li>
+                    <li>Personalized product recommendations</li>
+                </ul>
+                <p><strong>Technologies Used:</strong></p>
+                <ul>
+                    <li>HTML, CSS, JavaScript</li>
+                    <li>React for dynamic user interface</li>
+                    <li>Node.js and Express for backend development</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

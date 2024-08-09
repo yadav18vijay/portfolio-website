@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificates</title>
+    <style>
+        body {
+            background-color: #f5f5dc; /* Beige background color */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            padding-top: 250px;
+        }
+
+        .card-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            align-items: center; /* Center align cards horizontally */
+        }
+
+        .card {
+            perspective: 1000px;
+            width: 300px; /* Adjust width as needed */
+            height: 200px; /* Adjust height as needed */
+            position: relative;
+        }
+
+        .card-front, .card-back {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            backface-visibility: hidden;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            overflow: hidden;
+        }
+
+        .card-front {
+            background-color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            transition: transform 0.6s;
+        }
+
+        .card-back {
+            background-color: #f9f9f9;
+            transform: rotateY(180deg);
+            padding: 20px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .card:hover .card-front {
+            transform: rotateY(180deg);
+        }
+
+        .card:hover .card-back {
+            transform: rotateY(0deg);
+        }
+
+        .card-front img {
+            width: 100%;
+            height: auto;
+        }
+
+        .card-front h3 {
+            margin: 10px 0;
+            text-align: center;
+        }
+
+        .card-back h3 {
+            margin: 10px 0;
+            text-align: center;
+        }
+
+        .card-back p {
+            margin: 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="card-container">
+        <!-- AWS Card -->
+        <div class="card">
+            <div class="card-front">
+                <img src="/aws certiicate.jpg" alt="AWS Certificate">
+                <h3>AWS</h3>
+            </div>
+            <div class="card-back">
+                <h3>AWS Certification</h3>
+                <p><strong>Description:</strong> Certified in AWS technologies, including cloud computing, storage, and networking solutions.</p>
+            </div>
+        </div>
+        <!-- Full Stack Web Development Card -->
+        <div class="card">
+            <div class="card-front">
+                <img src="/full stack.jpg" alt="Full Stack Web Development Certificate">
+                <h3>Full Stack Web Development</h3>
+            </div>
+            <div class="card-back">
+                <h3>Full Stack Web Development</h3>
+                <p><strong>Description:</strong> Skilled in developing both front-end and back-end of web applications using various technologies.</p>
+            </div>
+        </div>
+        <!-- Power BI Card -->
+        <div class="card">
+            <div class="card-front">
+                <img src="/bi certificate .jpg "alt="Power BI Certificate">
+                <h3>Power BI</h3>
+            </div>
+            <div class="card-back">
+                <h3>Power BI Certification</h3>
+                <p><strong>Description:</strong> Proficient in creating interactive reports and dashboards using Microsoft Power BI.</p>
+            </div>
+        </div>
+        <!-- ASP.NET Card -->
+        <div class="card">
+            <div class="card-front">
+                <img src="/asp.jpg" alt="ASP.NET Certificate">
+                <h3>ASP.NET</h3>
+            </div>
+            <div class="card-back">
+                <h3>ASP.NET Certification</h3>
+                <p><strong>Description:</strong> Certified in developing dynamic web applications using ASP.NET framework.</p>
+            </div>
+        </div>
+        <!-- Microsoft SQL Server Card -->
+        <div class="card">
+            <div class="card-front">
+                <img src="/microsoft.jpg" alt="Microsoft SQL Server Certificate">
+                <h3>Microsoft SQL Server</h3>
+            </div>
+            <div class="card-back">
+                <h3>Microsoft SQL Server Certification</h3>
+                <p><strong>Description:</strong> Expertise in managing and querying databases using Microsoft SQL Server.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
